@@ -17,8 +17,12 @@ git push heroku master
 heroku run rake db:migrate
 heroku run rake db:seed
 
-bundle exec cucumber features/merge_article.feature
 rake cucumber
+bundle exec cucumber features/merge_article.feature
+
+rake spec
+rspec -p "spec/models/article_spec.rb"
+rspec -p "spec/controllers/admin/content_controller_spec.rb"
 
 ## HW 1-2
 
