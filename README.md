@@ -19,6 +19,8 @@ heroku run rake db:seed
 
 rake cucumber
 bundle exec cucumber features/merge_article.feature
+bundle exec cucumber features/merge_article_merging.feature
+bundle exec cucumber features/create_category.feature
 
 rake spec
 rspec -p "spec/models/article_spec.rb"
