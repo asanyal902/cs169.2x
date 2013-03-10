@@ -17,6 +17,9 @@ git push heroku master
 heroku run rake db:migrate
 heroku run rake db:seed
 
+bundle exec cucumber features/merge_article.feature
+rake cucumber
+
 ## HW 1-2
 
 
